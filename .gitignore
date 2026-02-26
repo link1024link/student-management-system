@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+._*
+
+# Compiled files
+*.o
+*.out
+student_management
+提出
+
+# Debug files
+*.dSYM/
+
+# VS Code
+.vscode/
