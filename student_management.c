@@ -28,8 +28,7 @@ void initializeStudents() {
     students[2].age = 20;
     
     studentCount = 3;
-    printf("初期データを登録しました。\n");
-}
+
 
 // 生徒追加
 void addStudent() {
@@ -104,8 +103,8 @@ int main() {
 
     while (1) {
         printf("\n--- 生徒管理システム ---\n");
-        printf("1. 生徒追加\n");
-        printf("2. 一覧表示\n");
+        printf("1. 一覧表示\n");
+        printf("2. 生徒追加\n");
         printf("3. ID検索\n");
         printf("0. 終了\n");
         printf("選択: ");
@@ -115,10 +114,10 @@ int main() {
 
         switch (choice) {
             case 1:
-                addStudent();
+                showStudents();
                 break;
             case 2:
-                showStudents();
+                addStudent();
                 break;
             case 3:
                 searchStudent();
