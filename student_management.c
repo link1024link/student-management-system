@@ -28,7 +28,8 @@ void initializeStudents() {
     students[2].age = 20;
     
     studentCount = 3;
-
+    printf("初期データを登録しました。\n");
+}
 
 // 生徒追加
 void addStudent() {
