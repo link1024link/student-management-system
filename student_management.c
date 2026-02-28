@@ -13,6 +13,24 @@ typedef struct {
 Student students[MAX_STUDENTS];
 int studentCount = 0;
 
+// 初期データを登録
+void initializeStudents() {
+    students[0].id = 1001;
+    strcpy(students[0].name, "山田太郎");
+    students[0].age = 20;
+    
+    students[1].id = 1002;
+    strcpy(students[1].name, "田中花子");
+    students[1].age = 21;
+    
+    students[2].id = 1003;
+    strcpy(students[2].name, "佐藤次郎");
+    students[2].age = 20;
+    
+    studentCount = 3;
+    printf("初期データを登録しました。\n");
+}
+
 // 生徒追加
 void addStudent() {
     if (studentCount >= MAX_STUDENTS) {
@@ -80,6 +98,9 @@ void searchStudent() {
 int main() {
     int choice;
     char buf[256];
+
+    // 初期データを登録
+    initializeStudents();
 
     while (1) {
         printf("\n--- 生徒管理システム ---\n");
